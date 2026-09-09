@@ -1,25 +1,25 @@
 class Slidiff < Formula
   desc "A slide deck an agent writes and a person reads in the terminal — slides point at file:line, the viewer draws the real diff, and review progress travels back"
   homepage "https://github.com/azihsoyn/slidiff"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/azihsoyn/slidiff/releases/download/v0.1.2/slidiff-aarch64-apple-darwin.tar.xz"
-      sha256 "83a261d675d78d07842a799988e05c527183eabc634f06919e52aa345119cbd2"
+      url "https://github.com/azihsoyn/slidiff/releases/download/v0.1.3/slidiff-aarch64-apple-darwin.tar.xz"
+      sha256 "dfc1a8007811f8daf350318cdd328ce3572656cd6c0b147931b1c8cda894d778"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/azihsoyn/slidiff/releases/download/v0.1.2/slidiff-x86_64-apple-darwin.tar.xz"
-      sha256 "1f9d2ab56992f04ae3afd6b35dd7de97026331ec032affb75e9338a440053f93"
+      url "https://github.com/azihsoyn/slidiff/releases/download/v0.1.3/slidiff-x86_64-apple-darwin.tar.xz"
+      sha256 "051988283a140f0d129dc6e27fb3c0c50cdbb1ac4edc1db376eca3c3fb0eacb2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/azihsoyn/slidiff/releases/download/v0.1.2/slidiff-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "0e1d7c352798f1ab03f0e4e4ccff4022bb5d7a0e67e67804be991ef73f5cef0c"
+      url "https://github.com/azihsoyn/slidiff/releases/download/v0.1.3/slidiff-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "55e40a8c0d2fbff603b308d80535e39a91125f9f57c7a837b1b4b50aaa018629"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/azihsoyn/slidiff/releases/download/v0.1.2/slidiff-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e57e0bc55324fc9996550b501220ed0c6f2144db4f1660f70d0689552a3c16f1"
+      url "https://github.com/azihsoyn/slidiff/releases/download/v0.1.3/slidiff-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "bb02659e425eeb029f8d1ed780130629b266134ddd1cc1f187938cf37a7cec58"
     end
   end
   license "MIT"
