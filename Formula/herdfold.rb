@@ -1,25 +1,25 @@
 class Herdfold < Formula
   desc "Long text, laid out as facing pages you turn: a book reader across two herdr panes, with bookmarks, notes and an agent to ask"
   homepage "https://github.com/azihsoyn/herdfold"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/azihsoyn/herdfold/releases/download/v0.1.0/herdfold-aarch64-apple-darwin.tar.xz"
-      sha256 "1f16cb630d19d05ea4361a09a40bcff380e32bdb43ca56f252fa5bd833a1d48f"
+      url "https://github.com/azihsoyn/herdfold/releases/download/v0.2.0/herdfold-aarch64-apple-darwin.tar.xz"
+      sha256 "3d5969d9d93ab6e69cc55aec3cdd0de8532ab99aebea2b93ca136661b5e4b161"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/azihsoyn/herdfold/releases/download/v0.1.0/herdfold-x86_64-apple-darwin.tar.xz"
-      sha256 "3f41cd12a4d9f63e41916019ff0747451498024ffba1d23db9c2c38d9423442b"
+      url "https://github.com/azihsoyn/herdfold/releases/download/v0.2.0/herdfold-x86_64-apple-darwin.tar.xz"
+      sha256 "f6dd3bac1f38659ccd59dcefa346976f2b4afe5b4d5c242a5196be7ba35f42a7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/azihsoyn/herdfold/releases/download/v0.1.0/herdfold-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "10126c3cf18bdf40a2dc46fa18b289a1b578caaf98d21d9e3244161cae427963"
+      url "https://github.com/azihsoyn/herdfold/releases/download/v0.2.0/herdfold-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2fc4e48a367bde50d7a7155d5e15e55f6159e8d511dfdd0f70f0915a9bee9f47"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/azihsoyn/herdfold/releases/download/v0.1.0/herdfold-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "65c6b73fc87d732a9ebed355b18d0bff489a30f3a389e98d66a5204d00ea1d62"
+      url "https://github.com/azihsoyn/herdfold/releases/download/v0.2.0/herdfold-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e193f047ec8818e9261b1aefcd0f242af22f5710126d9867f562d1b11a03042b"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
