@@ -1,35 +1,35 @@
 class Herdfold < Formula
   desc "Long text, laid out as facing pages you turn: a book reader across two herdr panes, with bookmarks, notes and an agent to ask"
   homepage "https://github.com/azihsoyn/herdfold"
-  version "0.5.0"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/azihsoyn/herdfold/releases/download/v0.5.0/herdfold-aarch64-apple-darwin.tar.xz"
-      sha256 "6224b0e0d61e4b02b403ffe1c0e61e679b3d96151df43d11889109e6235f2334"
+      url "https://github.com/azihsoyn/herdfold/releases/download/v0.6.0/herdfold-aarch64-apple-darwin.tar.xz"
+      sha256 "807d0b17dc6ca8a61cd8bd77db1d94e5b57c775fe1ba05fcfed856b9dc324fe8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/azihsoyn/herdfold/releases/download/v0.5.0/herdfold-x86_64-apple-darwin.tar.xz"
-      sha256 "82983cd7c24b8066bf6fea847311135aa23c03c17e7160fe87d095a1e92141cd"
+      url "https://github.com/azihsoyn/herdfold/releases/download/v0.6.0/herdfold-x86_64-apple-darwin.tar.xz"
+      sha256 "c2c1f4fb4e9cd4d856f84fa2dbeb03d2786fb6a9e5d3b2504f3e8b91d2fe60e8"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/azihsoyn/herdfold/releases/download/v0.5.0/herdfold-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7ec72f59769cc8a167a897aec22cebabfc216769d8f2b8cc60437df5230894f6"
+      url "https://github.com/azihsoyn/herdfold/releases/download/v0.6.0/herdfold-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "42e09829781085baabb33509ca74de3f6ac6fcfbf951194be11178a47e158522"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/azihsoyn/herdfold/releases/download/v0.5.0/herdfold-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c72fac901be2402961c14cbfc28d3434353e16f04fae567dba1438c49b42e2d2"
+      url "https://github.com/azihsoyn/herdfold/releases/download/v0.6.0/herdfold-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "cd0d1e115167179753831d8a2ef1208a3d3d44d75dfa501b7a2a9fe6fcd0f16e"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin":      {},
+    "aarch64-apple-darwin": {},
     "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin":       {},
-    "x86_64-unknown-linux-gnu":  {},
-  }.freeze
+    "x86_64-apple-darwin": {},
+    "x86_64-unknown-linux-gnu": {}
+  }
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
