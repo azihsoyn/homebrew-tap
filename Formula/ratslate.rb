@@ -1,25 +1,25 @@
 class Ratslate < Formula
   desc "An infinite canvas in the terminal: boxes, arrows and text, placed with the mouse, written out as ASCII"
   homepage "https://github.com/azihsoyn/ratslate"
-  version "0.3.0"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/azihsoyn/ratslate/releases/download/v0.3.0/ratslate-aarch64-apple-darwin.tar.xz"
-      sha256 "f351f6b894f2c3c87a400fee7280b3758d0e30a8fde0650b925266060f448e0f"
+      url "https://github.com/azihsoyn/ratslate/releases/download/v0.4.0/ratslate-aarch64-apple-darwin.tar.xz"
+      sha256 "30a63eb43a0eb4be3b031e7986b710ae52f59eaf38eba079ab2b0df1051021c6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/azihsoyn/ratslate/releases/download/v0.3.0/ratslate-x86_64-apple-darwin.tar.xz"
-      sha256 "705739174295222b59697a174e796015e4de8605c77fcae5ae1cab7c225dd8a8"
+      url "https://github.com/azihsoyn/ratslate/releases/download/v0.4.0/ratslate-x86_64-apple-darwin.tar.xz"
+      sha256 "e884811174dca96c5839fb46072d62b1dc1f40876055f22cb6971e47d5c985f2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/azihsoyn/ratslate/releases/download/v0.3.0/ratslate-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "fdc2ada714a0f9fa108809d19a657c8f78f0b19f13ba61441c37f6488226f225"
+      url "https://github.com/azihsoyn/ratslate/releases/download/v0.4.0/ratslate-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "54a784006dfd0085c736c09c78450df9aa1189fd187fbfbd7679e707d6b0868d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/azihsoyn/ratslate/releases/download/v0.3.0/ratslate-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4f99e11bc2ea12fc6ffb510afc486a1c04b3fee935917f58af283efe5eb80778"
+      url "https://github.com/azihsoyn/ratslate/releases/download/v0.4.0/ratslate-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "3fcf094228d8dc21c0e6358265a1fc82fecad58cc0fc0089a3cfcfa027dc3590"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
